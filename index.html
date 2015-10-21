@@ -191,5 +191,18 @@
                 </tr>
             </tbody>
         </table>
+        <form>
+            <fieldset>
+                <legend>Введите ваши email и номер телефона для подтверждения</legend>
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" placeholder="mail@example.com" required size="50">
+                <label for="phone">Номер телефона:</label>
+                <input id="phone" type="tel" placeholder="XXXXXXXXXXX" size="50"
+                       pattern="[0-9]{7,11}" required><br><br>
+                <button type="submit">
+                    Узнать данные о рейсе (без регистрации, но с смс)
+                </button>
+            </fieldset>
+        </form>
     </body>
 </html>
