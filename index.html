@@ -7,9 +7,9 @@
     </head>
     <body>
         <!-- Поле для фильтрации по городу -->
-        <input type="text" placeholder="Город отправления" value=""
-               onkeyup="this.setAttribute('value', this.value)">
-        <table class="timetable">
+        <!--<input type="text" placeholder="Город отправления" value=""-->
+        <!--onkeyup="this.setAttribute('value', this.value)">-->
+        <table>
             <thead>
                 <tr>
                     <th>Тип рейса</th>
@@ -198,7 +198,7 @@
                 <input type="email" id="email" placeholder="mail@example.com" required size="50">
                 <label for="phone">Номер телефона:</label>
                 <input id="phone" type="tel" placeholder="XXXXXXXXXXX" size="50"
-                       pattern="[0-9]{7,11}" required><br><br>
+                        pattern="[0-9]{7,11}" required><br><br>
                 <button type="submit">
                     Узнать данные о рейсе (без регистрации, но с смс)
                 </button>
