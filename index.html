@@ -7,12 +7,189 @@
     </head>
     <body>
         <!-- Поле для фильтрации по городу -->
-        <input
-            type="text"
-            placeholder="Город отправления"
-            value=""
-            onkeyup="this.setAttribute('value', this.value)">
-
-        <!-- Здесь применять вашу самую сильную магию -->
+        <input type="text" placeholder="Город отправления" value=""
+               onkeyup="this.setAttribute('value', this.value)">
+        <table class="timetable">
+            <thead>
+                <tr>
+                    <th>Тип рейса</th>
+                    <th>Номер рейса</th>
+                    <th>Авиакомпания</th>
+                    <th>Логотип авиакомпании</th>
+                    <th>Тип воздушного судна</th>
+                    <th>Аэропорт назначения</th>
+                    <th>Время вылета/прилёта</th>
+                    <th>Номер терминала</th>
+                    <th>Статус рейса</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="department"></td>
+                    <td>246</td>
+                    <td>Аэрофлот</td>
+                    <td class="aeroflot"></td>
+                    <td>А-321</td>
+                    <td>Париж(Шарль Де Голь)</td>
+                    <td>11:43, 21 октября 2015</td>
+                    <td>D</td>
+                    <td>Вылетел</td>
+                </tr>
+                <tr>
+                    <td class="department"></td>
+                    <td>4430</td>
+                    <td>Эйр Франс</td>
+                    <td class="airfrance"></td>
+                    <td>А-321</td>
+                    <td>Екатеринбург(Кольцово)</td>
+                    <td>00:18, 21 октября 2015</td>
+                    <td>D</td>
+                    <td>Вылетел</td>
+                </tr>
+                <tr>
+                    <td class="department"></td>
+                    <td>4964</td>
+                    <td>Эйр Франс</td>
+                    <td class="airfrance"></td>
+                    <td>А-320</td>
+                    <td>Челябинск(Баландино)</td>
+                    <td>00:19, 21 октября 2015</td>
+                    <td>D</td>
+                    <td>Вылетел</td>
+                </tr>
+                <tr>
+                    <td class="department"></td>
+                    <td>2901</td>
+                    <td>КЛМ Королевские Голландские Авиалинии</td>
+                    <td class="klm"></td>
+                    <td>А-319</td>
+                    <td>Краснодар(Пашковский)</td>
+                    <td>00:15, 21 октября 2015</td>
+                    <td>D</td>
+                    <td>Вылетел</td>
+                </tr>
+                <tr>
+                    <td class="department"></td>
+                    <td>2942</td>
+                    <td>КЛМ Королевские Голландские Авиалинии</td>
+                    <td class="klm"></td>
+                    <td>А-320</td>
+                    <td>Челябинск(Баландино)</td>
+                    <td>00:19, 21 октября 2015</td>
+                    <td>D</td>
+                    <td>Вылетел</td>
+                </tr>
+                <tr>
+                    <td class="department"></td>
+                    <td>3234</td>
+                    <td>КЛМ Королевские Голландские Авиалинии</td>
+                    <td class="klm"></td>
+                    <td>А-321</td>
+                    <td>Екатеринбург(Кольцово)</td>
+                    <td>00:18, 21 октября 2015</td>
+                    <td>D</td>
+                    <td>Вылетел</td>
+                </tr>
+                <tr>
+                    <td class="arrival"></td>
+                    <td>031</td>
+                    <td>Аэрофлот</td>
+                    <td class="aeroflot"></td>
+                    <td>А-320</td>
+                    <td>Москва(Шереметьево)</td>
+                    <td>00:00, 21 октября 2015</td>
+                    <td>D</td>
+                    <td>Совершил посадку в 00:04</td>
+                </tr>
+                <tr>
+                    <td class="department"></td>
+                    <td>1112</td>
+                    <td>Аэрофлот</td>
+                    <td class="aeroflot"></td>
+                    <td>А-319</td>
+                    <td>Краснодар(Пашковский)</td>
+                    <td>00:15, 21 октября 2015</td>
+                    <td>D</td>
+                    <td>Вылетел</td>
+                </tr>
+                <tr>
+                    <td class="department"></td>
+                    <td>1408</td>
+                    <td>Аэрофлот</td>
+                    <td class="aeroflot"></td>
+                    <td>А-321</td>
+                    <td>Екатеринбург(Кольцово)</td>
+                    <td>00:18, 21 октября 2015</td>
+                    <td>D</td>
+                    <td>Вылетел</td>
+                </tr>
+                <tr>
+                    <td class="department"></td>
+                    <td>1424</td>
+                    <td>Аэрофлот</td>
+                    <td class="aeroflot"></td>
+                    <td>А-320</td>
+                    <td>Челябинск(Баландино)</td>
+                    <td>00:19, 21 октября 2015</td>
+                    <td>D</td>
+                    <td>Вылетел</td>
+                </tr>
+                <tr>
+                    <td class="arrival"></td>
+                    <td>1144</td>
+                    <td>Эйр Франс</td>
+                    <td class="airfrance"></td>
+                    <td>А-320</td>
+                    <td>Москва(Шереметьево)</td>
+                    <td>00:09, 21 октября 2015</td>
+                    <td>E</td>
+                    <td>Совершил посадку в 23:59</td>
+                </tr>
+                <tr>
+                    <td class="department"></td>
+                    <td>2930</td>
+                    <td>КЛМ Королевские Голландские Авиалинии</td>
+                    <td class="klm"></td>
+                    <td>А-320</td>
+                    <td>Баку(Гейдар Алиев)</td>
+                    <td>00:22, 21 октября 2015</td>
+                    <td>F</td>
+                    <td>Вылетел</td>
+                </tr>
+                <tr>
+                    <td class="department"></td>
+                    <td>1852</td>
+                    <td>Аэрофлот</td>
+                    <td class="aeroflot"></td>
+                    <td>А-320</td>
+                    <td>Баку(Гейдар Алиев)</td>
+                    <td>00:22, 21 октября 2015</td>
+                    <td>F</td>
+                    <td>Вылетел</td>
+                </tr>
+                <tr>
+                    <td class="arrival"></td>
+                    <td>2317</td>
+                    <td>Аэрофлот</td>
+                    <td class="aeroflot"></td>
+                    <td>А-320</td>
+                    <td>Москва(Шереметьево)</td>
+                    <td>23:55, 20 октября 2015</td>
+                    <td>D</td>
+                    <td>Совершил посадку в 23:54</td>
+                </tr>
+                <tr>
+                    <td class="arrival"></td>
+                    <td>4451</td>
+                    <td>Аэрофлот</td>
+                    <td class="aeroflot"></td>
+                    <td>А-319</td>
+                    <td>Москва(Шереметьево)</td>
+                    <td>00:09, 21 октября 2015</td>
+                    <td>E</td>
+                    <td>Совершил посадку в 23:59</td>
+                </tr>
+            </tbody>
+        </table>
     </body>
 </html>
