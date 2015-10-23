@@ -1,8 +1,12 @@
+html
+{
+    padding: 10px;
+}
 table
 {
     width: 100%;
     border-collapse: collapse;
-    border: 5px solid #68C563;
+    border: 5px solid #1D65A9;
     position: relative;
     overflow: hidden;
     margin-bottom: 20px;
@@ -10,8 +14,7 @@ table
 
 td
 {
-    border: 1px solid lightgray;
-    height: 40px;
+    border: 1px solid #1D65A9;
     text-align: center;
     position: relative;
 }
@@ -24,7 +27,7 @@ tr
 
 th
 {
-    border-bottom: 3px solid #68C563;
+    border-bottom: 3px solid #1D65A9;
     background: white;
     text-align: center;
 }
@@ -32,7 +35,7 @@ th
 tr:nth-child(2n+1) td::after
 {
     content: '';
-    background: #CDF9AA;
+    background: #E7F3FF;
     position: absolute;
     left: 0;
     top: 0;
@@ -41,42 +44,12 @@ tr:nth-child(2n+1) td::after
     z-index: -3;
 }
 
-tr:nth-child(2n+1)  td::after
-{
-    content: '';
-    background: #CDF9AA;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -3;
-}
-
-td:hover
-{
-    background: #D2FF2E;
-}
-
-td:hover::after
+tbody td:hover::after
 {
     content: '';
     position: absolute;
     text-align: center;
-    background: #D2FF2E;
-    height: 10000px;
-    top: -5000px;
-    width: 100%;
-    left: 0;
-    z-index: -1;
-}
-
-tr:nth-child(2n+1) td:hover::after
-{
-    content: '';
-    position: absolute;
-    text-align: center;
-    background: #D2FF2E;
+    background: #B5E3F2;
     height: 10000px;
     top: -5000px;
     width: 100%;
@@ -86,36 +59,31 @@ tr:nth-child(2n+1) td:hover::after
 
 tbody tr:hover
 {
-    background: #D2FF2E;
+    background: #B5E3F2;
 }
 
 .department
 {
-    /*http://www.aeroflot.ru/cms/sites/all/themes/aeroflot/media/img/depart_ico.png*/
     background: url("http://su0.ru/KFB4") no-repeat center;
 }
 
 .arrival
 {
-    /*http://www.aeroflot.ru/cms/sites/all/themes/aeroflot/media/img/arrival_ico.png*/
     background: url("http://su0.ru/G51p") no-repeat center;
 }
 
 .aeroflot
 {
-    /*http://www.svo.aero/r/238E07D9-752F-4DE4-8DE4-305E823670EC/aeroflot_full.jpg*/
     background: url("http://su0.ru/QB9w") no-repeat center;
 }
 
 .airfrance
 {
-    /*http://www.svo.aero/r/7F140A14-936D-452E-8B8D-B14214707604/logo_af.png*/
     background: url("http://su0.ru/GYho") no-repeat center;
 }
 
 .klm
 {
-    /*http://www.svo.aero/r/9AD7B5AC-FD74-44D2-AA21-DF28E057E93B/KLM_full.jpg*/
     background: url("http://su0.ru/F7I2") no-repeat center;
 }
 
@@ -126,8 +94,8 @@ form
 
 button
 {
-    display: none;
-    margin-left: 37%;
+    align-content: center;
+    visibility: hidden;
 }
 
 form > fieldset > label
@@ -135,7 +103,7 @@ form > fieldset > label
     display: block;
 }
 
-input[type="email"]:valid + label + input[type="tel"]:valid + br + br + button
+input[type="email"]:valid + label + input[type="tel"]:valid ~ br + button
 {
-    display: block;
+    visibility: visible;
 }
